@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=5.0">
+    <title> Order Now </title>
+    <link rel="stylesheet" href="cafe.css">
+</head>
+<body>
+    <div>
+        <center><h1 style="color: #9e522e;">Fresh Outta Oven</h1></center>
+    </div>
+
+    <section class="menu">
+        <div class="nav">
+            <ul>
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a class="active" href="about.html">About us</a></li>
+                <li><a class="active" href="menu.html">Menu</a></li>
+                <li><a class="active" href="contactt.html">Contact</a></li>
+                <li><a class="active" href="order.html">Order</a></li>
+            </ul> <br>
+        </div>
+    </section>
+<center>
+        <div>
+            <h2 style="color: black;">For Orders</h2>
+            <p style="color: brown;">Explore our delicious offerings</p>
+        </div> <br>
+    </center>
+    
+    <center>
+    <form name="orderForm" onsubmit="return validateOrderForm()" method="post">
+        <label for="item">Select Item:</label><br>
+        <select id="item" name="item">
+            <option value="cake">Cake</option>
+            <option value="cookies">Cookies</option>
+            <option value="bread">Bread</option>
+            <option value="pastries">Pastries</option>
+            <option value="pies">Pies</option>
+            <option value="drinks">Refreshing drinks</option>
+            <option value="toasts">French Toast</option> 
+        </select><br> <br>
+
+        <label for="quantity">Quantity:</label><br>
+        <input type="number" id="quantity" name="quantity"><br> <br>
+
+        <label for="pickup-date">Pickup Date:</label><br>
+        <input type="date" id="pickup-date" name="pickup-date"><br> <br>
+
+        <label for="delivery">Delivery:</label>
+        <input type="checkbox" id="delivery" name="delivery"><br> <br>
+
+        <label for="address">Delivery Address:</label><br>
+        <input type="text" id="address" name="address"><br> <br>
+
+        <input type="submit" value="Place Your Order"> <br> <br>
+    </form>
+    </center> <br> <br> <br>
+    
+<center> <h3> Your Order Receipt </h3> </center>
+<table style="margin: 0 auto; border-collapse: collapse; border: 1px solid black;">
+    <tr>
+        <th style="border: 1px solid black;">Items</th>
+        <th style="border: 1px solid black;">Descriptions</th>
+        <th style="border: 1px solid black;">Price</th>
+    </tr>
+    <tr>
+        <td style="border: 1px solid black;">Cake</td>
+        <td rowspan="2" style="border: 1px solid black;">Delicious cakes/cookies for every occasion</td>
+        <td style="border: 1px solid black;">Rs. 900</td>
+    </tr>
+    <tr>
+        <td style="border: 1px solid black;">Cookies</td>
+        <td style="border: 1px solid black;">Rs. 130</td>
+    </tr>
+    <tr>
+        <td style="border: 1px solid black;">Bread</td>
+        <td style="border: 1px solid black;">Artisan bread customizable</td>
+        <td style="border: 1px solid black;">Rs. 1100</td>
+    </tr>
+    <tr>
+        <td style="border: 1px solid black;">Pastries</td>
+        <td style="border: 1px solid black;">Flaky pastries filled with various fillings</td>
+        <td style="border: 1px solid black;">Rs. 250</td>
+    </tr>
+    <tr>
+        <td style="border: 1px solid black;">Pies</td>
+        <td style="border: 1px solid black;">Classic pies with a variety of flavors</td>
+        <td style="border: 1px solid black;">Rs. 250</td>
+    </tr>
+    <tr>
+        <td style="border: 1px solid black;">Chocolate Pudding</td>
+        <td style="border: 1px solid black;">Classic pudding</td>
+        <td style="border: 1px solid black;">Rs. 220</td>
+    </tr>
+    <tr>
+        <td style="border: 1px solid black;">Muffins</td>
+        <td style="border: 1px solid black;">Muffins blueberry</td>
+        <td style="border: 1px solid black;">Rs. 180</td>
+    </tr>
+    <tr>
+        <td style="border: 1px solid black;">Your Total</td>
+        <td style="border: 1px solid black;"></td>
+        <td style="border: 1px solid black;">Rs. 2780</td>
+    </tr>
+
+</table>
+<br> <br>
+    <p> Feel free to go through our social media platforms and to reach out to us. </p>
+<div> <br> 
+    <a href="https://www.facebook.com">
+        <img src="facebook.png" alt="Facebook" style="width: 70px; height: 80; margin-right: 10px;">
+    </a>
+        <a href="https://www.instagram.com">
+        <img src="ig.png" alt="Instagram" style="width: 60px; height: 80;">
+    </a>
+</div>
+
+<br><br>
+    <a href="index.html">⬅️Go back to Home</a>
+    <br><br>
+
+    <footer>
+        <a href="https://www.bakeryb.com">Our Supporting Bakers❀</a> <br> <br>
+        <h3>Our Address: Swoyambhu chowk, Kathmandu</h3><br>
+        <h3>Our Operating Hours:</h3>
+        <p>Monday-Friday: 6am-8pm</p>
+        <p>Saturday-Sunday: 7:30am-7pm</p><br>
+        <h3>Contact Information:</h3>
+        <p>9836378215, 9837382827</p>
+        <p>Contact us via email: <a href="mailto:info@freshouttaoven">@freshouttaoven</a></p>
+    </footer>
+</div>
+</body>
+</html>
